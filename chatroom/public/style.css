@@ -92,7 +92,7 @@ body{
     padding: 0px 20px;
 }
 
-.chat-screen .header.logo{
+.chat-screen .header .logo{
     font-size: 18px;
     color: #eee;
     font-weight: 600;
@@ -133,15 +133,25 @@ body{
 }
 .chat-screen .messages .message.my-message{
     justify-content: flex-end;
+    /* flex-direction:column;
+    gap: 10px; */
 }
 .chat-screen .messages .message.other-message{
     justify-content: flex-start;
+    /* flex-direction:column;
+    gap: 10px; */
 }
 
 .chat-screen .messages .message .name{
-    word-wrap: break-word;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
+.chat-screen .messages .message .text{
+    word-wrap: break-word;
+}
 .chat-screen .messages .update{
     text-align: center;
     padding: 10px;

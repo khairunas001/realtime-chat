@@ -44,7 +44,7 @@
         renderMessage("other",message);
     });
     function renderMessage(type,message){
-        let messageContainer = app.querySelector(".chat-screen #message-input");
+        let messageContainer = app.querySelector(".chat-screen .message");
         if(type == "my"){
             let el = document.createElement("div");
             el.setAttribute("class", "message my-message");
