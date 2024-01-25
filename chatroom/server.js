@@ -17,8 +17,8 @@ io.on("connection", function(socket){
     })
     socket.on("chat", function(message){
         socket.broadcast.emit("chat", message);
-    })
-})
+    });
+});
 
 server.listen(5000, () => {
   console.log('Server is running on port 5000');
