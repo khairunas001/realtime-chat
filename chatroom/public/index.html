@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="app">
-      <div class="screen join-screen active">
+      <div class="screen join-screen">
         <div class="form">
           <h2>Join Chatroom</h2>
           <div class="form-input">
@@ -20,21 +20,21 @@
           </div>
         </div>
       </div>
-      <div class="screen chat-screen">
+      <div class="screen chat-screen active">
         <div class="header">
           <div class="logo">Chatroom</div>
           <button id="exit-chat">Exit</button>
         </div>
         <div class="messages">
           <!-- sample chat -->
-          <div class="messages my-messages">
+          <div class="message my-message">
             <div>
               <div class="name">You</div>
               <div class="text">Hi</div>
             </div>
           </div>
           <div class="update">Joko is joined the conversation</div>
-          <div class="messages other-messages">
+          <div class="message other-message">
             <div>
               <div class="name">Joko</div>
               <div class="text">Hi</div>
@@ -42,7 +42,11 @@
           </div>
         </div>
         <div class="typebox">
-          <input type="text" id="messages-input" />
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Masukkan Pesan..."
+          />
           <button id="send-message">Send</button>
         </div>
       </div>
